@@ -23,32 +23,6 @@ export default function SkillsV1(props: PortfolioData) {
                         <span className="font-mono">{skill.name}</span>
                     </div>
                 ))}
-
-                {/* Additional skills for visual balance */}
-                <div className="retro-card flex items-center gap-3 hover:translate-y-[-2px]">
-                    <div className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-retro-accent2/20 text-retro-accent2">
-                        <Check size={16} />
-                    </div>
-                    <span className="font-mono">TypeScript</span>
-                </div>
-                <div className="retro-card flex items-center gap-3 hover:translate-y-[-2px]">
-                    <div className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-retro-accent2/20 text-retro-accent2">
-                        <Check size={16} />
-                    </div>
-                    <span className="font-mono">Tailwind CSS</span>
-                </div>
-                <div className="retro-card flex items-center gap-3 hover:translate-y-[-2px]">
-                    <div className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-retro-accent2/20 text-retro-accent2">
-                        <Check size={16} />
-                    </div>
-                    <span className="font-mono">Docker</span>
-                </div>
-                <div className="retro-card flex items-center gap-3 hover:translate-y-[-2px]">
-                    <div className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-retro-accent2/20 text-retro-accent2">
-                        <Check size={16} />
-                    </div>
-                    <span className="font-mono">AWS</span>
-                </div>
             </div>
         </section>
     );

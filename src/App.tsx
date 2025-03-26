@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Portfolio from './pages/portfoilio_v1'
 import PortfolioV2 from './pages/portfolio_v2'
 import PortfolioV3 from './pages/portfolio_v3'
+import Demo from './pages/demo'
 // import PortfolioV4 from './pages/portfolio_v4'
 
 const queryClient = new QueryClient()
@@ -17,7 +18,7 @@ function App() {
           <Route path="/portfolio1" element={<Portfolio />} />
           <Route path="/portfolio2" element={<PortfolioV2 />} />
           <Route path="/portfolio3" element={<PortfolioV3 />} />
-          {/* <Route path="/portfolio4" element={<PortfolioV4 />} /> */}
+          <Route path="/" element={<Demo />} />
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>

@@ -1,10 +1,5 @@
-
-
 import { Github, Linkedin, Twitter } from 'lucide-react';
 import { PortfolioData } from '../data/portfolio';
-
-
-
 
 export default function HeroSectionV1(props: PortfolioData) {
     const user = props.user
