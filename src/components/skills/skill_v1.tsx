@@ -1,12 +1,8 @@
-
-
 import { PortfolioData } from '../data/portfolio';
 import { Check } from 'lucide-react';
 
-
 export default function SkillsV1(props: PortfolioData) {
     const skills = props.user.skills;
-
     return (
         <section id="skills" className="retro-container">
             <h2 className="font-display text-3xl text-retro-accent3 mb-6">SKILLS.sys</h2>

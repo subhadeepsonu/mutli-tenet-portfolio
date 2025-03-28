@@ -15,7 +15,6 @@ interface ExperienceV2Props {
 }
 
 export default function ExperienceV2(props: ExperienceV2Props) {
-    const { experiences } = props;
     const formatDate = (dateString: string) => {
         const date = new Date(dateString);
         return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short' });

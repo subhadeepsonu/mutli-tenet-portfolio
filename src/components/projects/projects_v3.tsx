@@ -1,4 +1,3 @@
-import React from 'react';
 import { Card, CardContent } from '../ui/card';
 import { Separator } from '@radix-ui/react-separator';
 import { ExternalLink } from 'lucide-react';
@@ -14,10 +13,6 @@ interface ProjectsV2Props {
 export default function ProjectsV3(props: ProjectsV2Props) {
     const user = props
 
-    const formatDate = (dateString: string) => {
-        const date = new Date(dateString);
-        return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short' });
-    };
     return (
         <section className="py-24 px-6 relative">
             <div className="max-w-5xl mx-auto">

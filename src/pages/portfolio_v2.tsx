@@ -4,8 +4,9 @@ import SkillsV2 from '@/components/skills/skills_v2';
 import ProjectsV2 from '@/components/projects/projects_v2';
 import ExperienceV2 from '@/components/experience/experience_v2';
 import FooterV2 from '@/components/footer/footer_v2';
+import { PortfolioData } from "@/components/data/portfolio";
 
-export default function PortfolioV2() {
+export default function PortfolioV2(props: PortfolioData) {
     const { user } = userData;
 
     return (

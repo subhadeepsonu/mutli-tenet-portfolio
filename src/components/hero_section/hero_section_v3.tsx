@@ -4,7 +4,7 @@ interface HeroSectionV2Props {
     user: {
         bio: string;
         email: string;
-        socialLinks: {
+        socialLink: {
             github: string;
             linkedin: string;
             twitter: string;
@@ -90,13 +90,13 @@ export default function HeroSectionV3(props: HeroSectionV2Props) {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 1 }}
                 >
-                    <a href={user.socialLinks.github} className="w-10 h-10 rounded-full bg-black/50 backdrop-blur-md flex items-center justify-center border border-futuristic-purple/40 hover:border-futuristic-purple transition-all duration-300 hover:bg-futuristic-purple/20 hover:shadow-neon" target="_blank" rel="noopener noreferrer">
+                    <a href={user.socialLink.github} className="w-10 h-10 rounded-full bg-black/50 backdrop-blur-md flex items-center justify-center border border-futuristic-purple/40 hover:border-futuristic-purple transition-all duration-300 hover:bg-futuristic-purple/20 hover:shadow-neon" target="_blank" rel="noopener noreferrer">
                         <Github size={18} />
                     </a>
-                    <a href={user.socialLinks.linkedin} className="w-10 h-10 rounded-full bg-black/50 backdrop-blur-md flex items-center justify-center border border-futuristic-purple/40 hover:border-futuristic-purple transition-all duration-300 hover:bg-futuristic-purple/20 hover:shadow-neon" target="_blank" rel="noopener noreferrer">
+                    <a href={user.socialLink.linkedin} className="w-10 h-10 rounded-full bg-black/50 backdrop-blur-md flex items-center justify-center border border-futuristic-purple/40 hover:border-futuristic-purple transition-all duration-300 hover:bg-futuristic-purple/20 hover:shadow-neon" target="_blank" rel="noopener noreferrer">
                         <Linkedin size={18} />
                     </a>
-                    <a href={user.socialLinks.twitter} className="w-10 h-10 rounded-full bg-black/50 backdrop-blur-md flex items-center justify-center border border-futuristic-purple/40 hover:border-futuristic-purple transition-all duration-300 hover:bg-futuristic-purple/20 hover:shadow-neon" target="_blank" rel="noopener noreferrer">
+                    <a href={user.socialLink.twitter} className="w-10 h-10 rounded-full bg-black/50 backdrop-blur-md flex items-center justify-center border border-futuristic-purple/40 hover:border-futuristic-purple transition-all duration-300 hover:bg-futuristic-purple/20 hover:shadow-neon" target="_blank" rel="noopener noreferrer">
                         <Twitter size={18} />
                     </a>
                     <a href={`mailto:${user.email}`} className="w-10 h-10 rounded-full bg-black/50 backdrop-blur-md flex items-center justify-center border border-futuristic-purple/40 hover:border-futuristic-purple transition-all duration-300 hover:bg-futuristic-purple/20 hover:shadow-neon">

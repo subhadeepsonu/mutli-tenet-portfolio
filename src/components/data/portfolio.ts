@@ -33,7 +33,7 @@ export interface PortfolioData {
     domain: string;
     email: string;
     bio: string;
-    socialLinks: {
+    socialLink: {
       github: string;
       linkedin: string;
       twitter: string;
