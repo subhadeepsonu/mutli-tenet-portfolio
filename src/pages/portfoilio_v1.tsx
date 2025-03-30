@@ -17,12 +17,11 @@ export default function PortfolioV1(props: PortfolioData) {
             <div className="relative z-10">
                 <HeroSectionV1 user={dummy.user} />
                 <div className="retro-divider"></div>
-                <SkillsV1 user={dummy.user} />
+                {(dummy.user.skills.length > 0) ? <SkillsV1 user={dummy.user} /> : null}
                 <div className="retro-divider"></div>
-                <ProjectsV1 user={dummy.user} />
+                {(dummy.user.projects.length > 0) ? <ProjectsV1 user={dummy.user} /> : null}
                 <div className="retro-divider"></div>
-                <ExperienceV1 user={dummy.user} />
-
+                {(dummy.user.experience.length > 0) ? <ExperienceV1 user={dummy.user} /> : null}
                 <FooterV1 />
             </div>
         </div>

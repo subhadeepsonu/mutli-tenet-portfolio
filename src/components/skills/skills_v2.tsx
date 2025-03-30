@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 
-interface SkillsV2Props {
+export interface SkillsV2Props {
     skills: {
         id: string;
         name: string;

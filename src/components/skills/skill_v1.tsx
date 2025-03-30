@@ -1,5 +1,6 @@
-import { PortfolioData } from '../data/portfolio';
+
 import { Check } from 'lucide-react';
+import { PortfolioData } from '../data/portfolio';
 
 export default function SkillsV1(props: PortfolioData) {
     const skills = props.user.skills;
