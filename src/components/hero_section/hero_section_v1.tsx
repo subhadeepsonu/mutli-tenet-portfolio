@@ -10,9 +10,9 @@ export default function HeroSectionV1(props: PortfolioData) {
             <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
                 <div className="text-center md:text-left">
                     <h1 className="retro-header">
-                        <span className="text-retro-accent3">{'<'}</span>
-                        {user.email.split('@')[0]}
-                        <span className="text-retro-accent3">{'/>'}</span>
+
+                        <p className='text-2xl md:text-5xl lg:text-7xl'>{user.email.split('@')[0]}</p>
+
                     </h1>
                     <h2 className="retro-subheader terminal-prefix cursor-blink">
                         {user.bio ? user.bio : 'Hello, I am a web developer.'}

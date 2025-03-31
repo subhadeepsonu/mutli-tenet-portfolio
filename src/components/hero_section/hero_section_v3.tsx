@@ -69,7 +69,7 @@ export default function HeroSectionV3(props: HeroSectionV2Props) {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-futuristic-purple via-futuristic-bright-blue to-futuristic-blue">{user.email.split("@")[0]}</span>
+                    <span className="bg-clip-text text-2xl sm:text-5xl lg:text-7xl text-transparent bg-gradient-to-r from-futuristic-purple via-futuristic-bright-blue to-futuristic-blue">{user.email.split("@")[0]}</span>
 
                 </motion.h1>
 
