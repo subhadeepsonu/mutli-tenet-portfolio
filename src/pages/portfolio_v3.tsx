@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 export default function PortfolioV3(props: PortfolioData) {
     const user = props.user;
     useEffect(() => {
-        document.title = `${props.user.email.split('@')[0]} | Portfolio`
+        document.title = `${props.user.email.split('@')[0]} `
     }, [])
 
     return (
