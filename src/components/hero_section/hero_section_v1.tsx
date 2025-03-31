@@ -13,7 +13,7 @@ export default function HeroSectionV1(props: PortfolioData) {
                         <span className="text-retro-accent3">{'/>'}</span>
                     </h1>
                     <h2 className="retro-subheader terminal-prefix cursor-blink">
-                        {user.bio}
+                        {user.bio ? user.bio : 'Hello, I am a web developer.'}
                     </h2>
                     <p className="font-mono text-retro-muted mt-4 max-w-xl">
                         Welcome to my digital space. I build things for the web, focusing on clean code, user experience, and modern technologies.
@@ -22,15 +22,21 @@ export default function HeroSectionV1(props: PortfolioData) {
 
                 <div className="flex flex-col items-center gap-4">
                     <div className="inline-flex gap-3">
-                        <a href={user.socialLink.github || ""} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
-                            <Github size={20} className="text-retro-accent2" />
-                        </a>
-                        <a href={user.socialLink.linkedin || ""} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
-                            <Linkedin size={20} className="text-retro-accent2" />
-                        </a>
-                        <a href={user.socialLink.twitter || ""} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Twitter">
-                            <Twitter size={20} className="text-retro-accent2" />
-                        </a>
+                        {user.socialLink?.github ? (
+                            <a href={user.socialLink.github} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
+                                <Github size={20} className="text-retro-accent2" />
+                            </a>
+                        ) : null}
+                        {user.socialLink?.linkedin ? (
+                            <a href={user.socialLink.linkedin} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
+                                <Linkedin size={20} className="text-retro-accent2" />
+                            </a>
+                        ) : null}
+                        {user.socialLink?.twitter ? (
+                            <a href={user.socialLink.twitter} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Twitter">
+                                <Twitter size={20} className="text-retro-accent2" />
+                            </a>
+                        ) : null}
                     </div>
                     <a
                         href={`mailto:${user.email}`}

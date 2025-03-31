@@ -32,11 +32,11 @@ export interface PortfolioData {
     id: string;
     domain: string;
     email: string;
-    bio: string;
+    bio?: string;
     socialLink: {
-      github: string;
-      linkedin: string;
-      twitter: string;
+      github?: string;
+      linkedin?: string;
+      twitter?: string;
     };
     style: {
       id: number;
