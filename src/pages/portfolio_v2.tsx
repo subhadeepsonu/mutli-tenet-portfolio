@@ -3,15 +3,13 @@ import ProjectsV2 from '@/components/projects/projects_v2';
 import ExperienceV2 from '@/components/experience/experience_v2';
 import FooterV2 from '@/components/footer/footer_v2';
 import { PortfolioData } from "@/components/data/portfolio";
-import { useEffect } from 'react';
 import HeroSectionV2 from '@/components/hero_section/hero_section_v2';
 
 export default function PortfolioV2(props: PortfolioData) {
     const user = props.user;
     useEffect(() => {
-        console.log(user)
+        document.title = `${props.user.email.split('@')[0]} | Portfolio`
     }, [])
-
     return (
         <div className="bg-gradient-to-br h-screen from-white to-artsy-green/30 min-h-screen text-gray-800 font-sans">
             <div className="fixed top-20 left-20 w-40 h-40 bg-artsy-yellow rounded-full opacity-20 blur-3xl parallax-element" data-speed="0.02"></div>

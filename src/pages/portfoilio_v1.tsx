@@ -9,7 +9,7 @@ import { useEffect } from "react"
 
 export default function PortfolioV1(props: PortfolioData) {
     useEffect(() => {
-        console.log(props)
+        document.title = `${props.user.email.split('@')[0]} | Portfolio`
     }, [])
     const dummy = props
     return (
