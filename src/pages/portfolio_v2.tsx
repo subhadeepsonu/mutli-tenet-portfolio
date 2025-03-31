@@ -22,6 +22,7 @@ export default function PortfolioV2(props: PortfolioData) {
             {user.projects?.length > 0 && <ProjectsV2 projects={user.projects} />}
             {user.experience?.length > 0 && <ExperienceV2 experiences={user.experience} />}
             <FooterV2
+                email={user.email}
                 github={user.github}
                 twitter={user.twitter}
                 linkedin={user.linkedin}

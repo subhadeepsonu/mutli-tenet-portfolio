@@ -22,7 +22,7 @@ export default function PortfolioV1(props: PortfolioData) {
                 {(dummy.user.projects.length > 0) ? <ProjectsV1 user={dummy.user} /> : null}
                 <div className="retro-divider"></div>
                 {(dummy.user.experience.length > 0) ? <ExperienceV1 user={dummy.user} /> : null}
-                <FooterV1 />
+                <FooterV1 email={dummy.user.email} />
             </div>
         </div>
     )

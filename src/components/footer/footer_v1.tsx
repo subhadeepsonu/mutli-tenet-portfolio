@@ -1,7 +1,9 @@
 
 import { Heart } from 'lucide-react';
 
-export default function FooterV1() {
+export default function FooterV1(props: {
+    email: string
+}) {
     const currentYear = new Date().getFullYear();
 
     return (
@@ -10,7 +12,7 @@ export default function FooterV1() {
 
             <div className="text-center">
                 <div className="font-mono text-sm text-retro-muted flex flex-col sm:flex-row justify-center items-center gap-2">
-                    <span>© {currentYear} John Doe</span>
+                    <span>© {currentYear} {props.email.split('@')[0]}</span>
                     <span className="hidden sm:inline text-retro-border">|</span>
                     <span className="flex items-center gap-1">
                         Built with <Heart size={14} className="text-retro-accent1" /> and React
