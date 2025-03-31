@@ -4,13 +4,11 @@ import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 // Define the props type
 interface HeroSectionV2Props {
     user: {
-        bio: string;
+        bio?: string;
         email: string;
-        socialLinks: {
-            github: string;
-            linkedin: string;
-            twitter: string;
-        };
+        github?: string;
+        linkedin?: string;
+        twitter?: string;
     };
 }
 
@@ -60,13 +58,13 @@ export default function HeroSectionV2(props: HeroSectionV2Props) {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 1 }}
                 >
-                    <a href={user.socialLinks.github} className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-artsy-peach/30 shadow-soft hover:shadow-md transition-all duration-300 hover:border-artsy-orange/50" target="_blank" rel="noopener noreferrer">
+                    <a href={user.github} className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-artsy-peach/30 shadow-soft hover:shadow-md transition-all duration-300 hover:border-artsy-orange/50" target="_blank" rel="noopener noreferrer">
                         <Github size={20} className="text-gray-700" />
                     </a>
-                    <a href={user.socialLinks.linkedin} className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-artsy-peach/30 shadow-soft hover:shadow-md transition-all duration-300 hover:border-artsy-orange/50" target="_blank" rel="noopener noreferrer">
+                    <a href={user.linkedin} className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-artsy-peach/30 shadow-soft hover:shadow-md transition-all duration-300 hover:border-artsy-orange/50" target="_blank" rel="noopener noreferrer">
                         <Linkedin size={20} className="text-gray-700" />
                     </a>
-                    <a href={user.socialLinks.twitter} className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-artsy-peach/30 shadow-soft hover:shadow-md transition-all duration-300 hover:border-artsy-orange/50" target="_blank" rel="noopener noreferrer">
+                    <a href={user.twitter} className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-artsy-peach/30 shadow-soft hover:shadow-md transition-all duration-300 hover:border-artsy-orange/50" target="_blank" rel="noopener noreferrer">
                         <Twitter size={20} className="text-gray-700" />
                     </a>
                     <a href={`mailto:${user.email}`} className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-artsy-peach/30 shadow-soft hover:shadow-md transition-all duration-300 hover:border-artsy-orange/50">

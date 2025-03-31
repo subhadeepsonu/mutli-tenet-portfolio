@@ -10,8 +10,7 @@ export interface Project {
   title: string;
   description: string;
   link: string;
-  createdAt: string;
-  updatedAt: string;
+  github: string;
 }
 
 export interface Experience {
@@ -22,9 +21,7 @@ export interface Experience {
   location: string;
   startDate: string;
   endDate: string;
-  description: string;
-  createdAt: string;
-  updatedAt: string;
+  description: string
 }
 
 export interface PortfolioData {
@@ -33,19 +30,12 @@ export interface PortfolioData {
     domain: string;
     email: string;
     bio?: string;
-    socialLink: {
-      github?: string;
-      linkedin?: string;
-      twitter?: string;
-    };
-    style: {
-      id: number;
-      name: string;
-    };
+    github?: string;
+    linkedin?: string;
+    twitter?: string;
+    theme: string;
     skills: Skill[];
     projects: Project[];
     experience: Experience[];
-    createdAt: string;
-    updatedAt: string;
   };
 }

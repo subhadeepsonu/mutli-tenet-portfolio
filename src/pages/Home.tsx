@@ -4,8 +4,8 @@ import axios from "axios"
 import Loading from "./Loading"
 import ErrorPage from "./Error"
 import PortfolioV1 from "./portfoilio_v1"
-// import PortfolioV2 from "./portfolio_v2"
-// import PortfolioV3 from "./portfolio_v3"
+import PortfolioV2 from "./portfolio_v2"
+import PortfolioV3 from "./portfolio_v3"
 
 export default function Home(props: {
     domain: string
@@ -14,7 +14,6 @@ export default function Home(props: {
         queryKey: ["name", props.domain],
         queryFn: async () => {
             const resp = await axios.get(`${BASEURL}/user/profile?domain=${props.domain}`)
-            console.log(resp.data)
             return resp.data
         }
     })
@@ -32,11 +31,14 @@ export default function Home(props: {
                 <a href="/" className="mt-4 text-blue-500 hover:underline">Go back to home</a>
             </div>
         }
-        if (QuerData.data.data.style == null) {
+        if (QuerData.data.data.theme == "retro") {
             return <PortfolioV1 user={QuerData.data.data} />
         }
-        else if (QuerData.data.data.style.name == null) {
-            <PortfolioV1 user={QuerData.data.data} />
+        else if (QuerData.data.data.theme == "light") {
+            return <PortfolioV2 user={QuerData.data.data} />
+        }
+        else {
+            return <PortfolioV3 user={QuerData.data.data} />
         }
     }
 

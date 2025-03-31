@@ -4,6 +4,7 @@ import { PortfolioData } from '../data/portfolio';
 export default function HeroSectionV1(props: PortfolioData) {
     const user = props.user
 
+
     return (
         <header className="retro-container pt-12">
             <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
@@ -22,18 +23,18 @@ export default function HeroSectionV1(props: PortfolioData) {
 
                 <div className="flex flex-col items-center gap-4">
                     <div className="inline-flex gap-3">
-                        {user.socialLink?.github ? (
-                            <a href={user.socialLink.github} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
+                        {user.github ? (
+                            <a href={user.github} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
                                 <Github size={20} className="text-retro-accent2" />
                             </a>
                         ) : null}
-                        {user.socialLink?.linkedin ? (
-                            <a href={user.socialLink.linkedin} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
+                        {user.linkedin ? (
+                            <a href={user.linkedin} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
                                 <Linkedin size={20} className="text-retro-accent2" />
                             </a>
                         ) : null}
-                        {user.socialLink?.twitter ? (
-                            <a href={user.socialLink.twitter} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Twitter">
+                        {user.twitter ? (
+                            <a href={user.twitter} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Twitter">
                                 <Twitter size={20} className="text-retro-accent2" />
                             </a>
                         ) : null}

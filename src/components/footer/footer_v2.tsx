@@ -1,11 +1,9 @@
 import { Github, Linkedin, Twitter } from 'lucide-react';
 
 export default function FooterV2(props: {
-    socialLinks: {
-        github?: string,
-        twitter?: string,
-        linkedin?: string
-    }
+    github?: string,
+    twitter?: string,
+    linkedin?: string,
 }) {
     return (
         <footer className="py-10 px-6 border-t border-artsy-peach/30">
@@ -16,15 +14,14 @@ export default function FooterV2(props: {
                     </div>
                     <p className="text-gray-600">© {new Date().getFullYear()} John Doe</p>
                 </div>
-
                 <div className="flex gap-6">
-                    <a href={props.socialLinks.github} className="text-gray-600 hover:text-gray-900 transition-colors duration-300" target="_blank" rel="noopener noreferrer">
+                    <a href={props.github} className="text-gray-600 hover:text-gray-900 transition-colors duration-300" target="_blank" rel="noopener noreferrer">
                         <Github size={18} />
                     </a>
-                    <a href={props.socialLinks.linkedin} className="text-gray-600 hover:text-gray-900 transition-colors duration-300" target="_blank" rel="noopener noreferrer">
+                    <a href={props.linkedin} className="text-gray-600 hover:text-gray-900 transition-colors duration-300" target="_blank" rel="noopener noreferrer">
                         <Linkedin size={18} />
                     </a>
-                    <a href={props.socialLinks.twitter} className="text-gray-600 hover:text-gray-900 transition-colors duration-300" target="_blank" rel="noopener noreferrer">
+                    <a href={props.twitter} className="text-gray-600 hover:text-gray-900 transition-colors duration-300" target="_blank" rel="noopener noreferrer">
                         <Twitter size={18} />
                     </a>
                 </div>
