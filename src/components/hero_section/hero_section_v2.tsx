@@ -29,7 +29,7 @@ export default function HeroSectionV2(props: HeroSectionV2Props) {
                     className="relative inline-block mb-8"
                 >
                     <div className="w-32 h-32 bg-white rounded-full shadow-soft flex items-center justify-center text-2xl font-bold font-handwriting text-gray-800 relative z-10">
-                        <p className='text-2xl md:text-5xl lg:text-7xl'>{user.email.split('@')[0]}</p>
+                        <p className='text-2xl md:text-5xl lg:text-7xl'>{user.email.split('@')[0].charAt(0).toUpperCase()}</p>
                     </div>
                     <div className="absolute inset-0 bg-artsy-pink rounded-full blur-md -z-10 animate-float"></div>
                 </motion.div>
