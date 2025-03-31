@@ -5,9 +5,13 @@ import ExperienceV3 from '@/components/experience/experience_v3';
 import ProjectsV3 from '@/components/projects/projects_v3';
 import SkillsV3 from '@/components/skills/skills_v3';
 import { PortfolioData } from '@/components/data/portfolio';
+import { useEffect } from 'react';
 
 export default function PortfolioV3(props: PortfolioData) {
     const user = props.user;
+    useEffect(() => {
+        document.title = `${props.user.email.split('@')[0]} | Portfolio`
+    }, [])
 
     return (
         <div className="bg-gradient-to-br  from-black to-futuristic-dark min-h-screen text-white overflow-hidden font-sans" >

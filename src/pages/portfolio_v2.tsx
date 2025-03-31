@@ -4,6 +4,7 @@ import ExperienceV2 from '@/components/experience/experience_v2';
 import FooterV2 from '@/components/footer/footer_v2';
 import { PortfolioData } from "@/components/data/portfolio";
 import HeroSectionV2 from '@/components/hero_section/hero_section_v2';
+import { useEffect } from 'react';
 
 export default function PortfolioV2(props: PortfolioData) {
     const user = props.user;
