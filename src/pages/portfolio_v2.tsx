@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 export default function PortfolioV2(props: PortfolioData) {
     const user = props.user;
     useEffect(() => {
-        document.title = `${props.user.email.split('@')[0]} | Portfolio`
+        document.title = `${props.user.email.split('@')[0]}`
     }, [])
     return (
         <div className="bg-gradient-to-br h-screen from-white to-artsy-green/30 min-h-screen text-gray-800 font-sans">
