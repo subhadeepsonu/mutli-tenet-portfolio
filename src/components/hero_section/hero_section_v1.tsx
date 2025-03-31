@@ -6,7 +6,7 @@ export default function HeroSectionV1(props: PortfolioData) {
 
 
     return (
-        <header className="retro-container pt-12">
+        <header className="retro-container pt-12 px-5">
             <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
                 <div className="text-center md:text-left">
                     <h1 className="retro-header">
