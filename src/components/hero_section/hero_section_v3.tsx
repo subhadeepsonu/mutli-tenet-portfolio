@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 interface HeroSectionV2Props {
     user: {
-        bio: string;
+        bio?: string;
         email: string;
         socialLink: {
-            github: string;
-            linkedin: string;
-            twitter: string;
+            github?: string;
+            linkedin?: string;
+            twitter?: string;
         };
     };
 }

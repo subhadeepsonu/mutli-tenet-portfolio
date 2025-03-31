@@ -2,9 +2,9 @@ import { Github, Linkedin, Twitter } from 'lucide-react';
 
 export default function FooterV3(props: {
     socialLinks: {
-        github: string,
-        twitter: string,
-        linkedin: string
+        github?: string,
+        twitter?: string,
+        linkedin?: string
     }
 }) {
     return (
