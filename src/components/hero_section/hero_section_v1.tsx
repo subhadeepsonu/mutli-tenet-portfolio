@@ -10,7 +10,6 @@ export default function HeroSectionV1(props: PortfolioData) {
                 <div className="text-center md:text-left">
                     <h1 className="retro-header">
                         <span className="text-retro-accent3">{'<'}</span>
-                        John Doe
                         <span className="text-retro-accent3">{'/>'}</span>
                     </h1>
                     <h2 className="retro-subheader terminal-prefix cursor-blink">
@@ -23,13 +22,13 @@ export default function HeroSectionV1(props: PortfolioData) {
 
                 <div className="flex flex-col items-center gap-4">
                     <div className="inline-flex gap-3">
-                        <a href={user.socialLink.github} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
+                        <a href={user.socialLink.github || ""} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
                             <Github size={20} className="text-retro-accent2" />
                         </a>
-                        <a href={user.socialLink.linkedin} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
+                        <a href={user.socialLink.linkedin || ""} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
                             <Linkedin size={20} className="text-retro-accent2" />
                         </a>
-                        <a href={user.socialLink.twitter} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Twitter">
+                        <a href={user.socialLink.twitter || ""} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Twitter">
                             <Twitter size={20} className="text-retro-accent2" />
                         </a>
                     </div>
