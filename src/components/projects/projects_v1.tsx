@@ -33,12 +33,7 @@ export default function ProjectsV1(props: PortfolioData) {
                             {project.description}
                         </p>
 
-                        <div className="font-mono text-xs text-retro-accent2">
-                            {new Date(project.createdAt).toLocaleDateString('en-US', {
-                                year: 'numeric',
-                                month: 'short'
-                            })}
-                        </div>
+
                     </div>
                 ))}
             </div>
