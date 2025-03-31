@@ -11,6 +11,7 @@ export default function HeroSectionV1(props: PortfolioData) {
                 <div className="text-center md:text-left">
                     <h1 className="retro-header">
                         <span className="text-retro-accent3">{'<'}</span>
+                        {user.email.split('@')[0]}
                         <span className="text-retro-accent3">{'/>'}</span>
                     </h1>
                     <h2 className="retro-subheader terminal-prefix cursor-blink">

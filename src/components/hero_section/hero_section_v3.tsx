@@ -59,7 +59,7 @@ export default function HeroSectionV3(props: HeroSectionV2Props) {
                 >
                     <div className="w-28 h-28 bg-gradient-to-br from-futuristic-vivid-purple to-futuristic-blue rounded-3xl mb-8 flex items-center justify-center text-xl font-bold relative transform rotate-12 shadow-neon">
                         <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-futuristic-purple/30 to-futuristic-blue/30 blur-xl opacity-70 animate-pulse-glow"></div>
-                        <span className="relative z-10 text-2xl font-bold tracking-wider transform -rotate-12">JD</span>
+                        <span className="relative z-10 text-2xl font-bold tracking-wider transform -rotate-12">{user.email.split("@")[0].charAt(0).toUpperCase()}</span>
                     </div>
                 </motion.div>
 
@@ -69,8 +69,8 @@ export default function HeroSectionV3(props: HeroSectionV2Props) {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-futuristic-purple via-futuristic-bright-blue to-futuristic-blue">John</span>
-                    <span className="text-white">Doe</span>
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-futuristic-purple via-futuristic-bright-blue to-futuristic-blue">{user.email.split("@")[0]}</span>
+
                 </motion.h1>
 
                 <motion.p

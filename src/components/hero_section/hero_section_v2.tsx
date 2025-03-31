@@ -29,7 +29,7 @@ export default function HeroSectionV2(props: HeroSectionV2Props) {
                     className="relative inline-block mb-8"
                 >
                     <div className="w-32 h-32 bg-white rounded-full shadow-soft flex items-center justify-center text-2xl font-bold font-handwriting text-gray-800 relative z-10">
-                        JD
+                        {user.email.split('@')[0].charAt(0).toUpperCase()}
                     </div>
                     <div className="absolute inset-0 bg-artsy-pink rounded-full blur-md -z-10 animate-float"></div>
                 </motion.div>
@@ -40,7 +40,7 @@ export default function HeroSectionV2(props: HeroSectionV2Props) {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                    John Doe
+                    {user.email.split('@')[0]}
                 </motion.h1>
 
                 <motion.p

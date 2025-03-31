@@ -32,8 +32,6 @@ export default function ProjectsV1(props: PortfolioData) {
                         <p className="font-mono text-sm text-retro-muted mb-4 line-clamp-2">
                             {project.description}
                         </p>
-
-
                     </div>
                 ))}
             </div>
